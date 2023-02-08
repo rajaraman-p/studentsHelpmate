@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Time-table</title>
+  <link rel="stylesheet" href="time-table.css">
+</head>
+<body>
+    <h1>Class Time-table</h1>
+    <table id="timetable">
+      <tr>
+        <th>Day / Time</th>
+        <th>Period 1</th>
+        <th>Period 2</th>
+        <th>Period 3</th>
+        <th>Period 4</th>
+        <th>Period 5</th>
+        <th>Period 6</th>
+        <th>Period 7</th>
+        <th>Period 8</th>
+      </tr>
+      <tr>
+        <td>Monday</td>
+        <td id="monday-1"></td>
+        <td id="monday-2"></td>
+        <td id="monday-3"></td>
+        <td id="monday-4"></td>
+        <td id="monday-5"></td>
+        <td id="monday-6"></td>
+        <td id="monday-7"></td>
+        <td id="monday-8"></td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td id="tuesday-1"></td>
+        <td id="tuesday-2"></td>
+        <td id="tuesday-3"></td>
+        <td id="tuesday-4"></td>
+        <td id="tuesday-5"></td>
+        <td id="tuesday-6"></td>
+        <td id="tuesday-7"></td>
+        <td id="tuesday-8"></td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td id="wednesday-1"></td>
+        <td id="wednesday-2"></td>
+        <td id="wednesday-3"></td>
+        <td id="wednesday-4"></td>
+        <td id="wednesday-5"></td>
+        <td id="wednesday-6"></td>
+        <td id="wednesday-7"></td>
+        <td id="wednesday-8"></td>
+      </tr>
+      <tr>
+        <td>Thursday</td>
+        <td id="thursday-1"></td>
+        <td id="thursday-2"></td>
+        <td id="thursday-3"></td>
+        <td id="thursday-4"></td>
+        <td id="thursday-5"></td>
+        <td id="thursday-6"></td>
+        <td id="thursday-7"></td>
+        <td id="thursday-8"></td>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td id="friday-1"></td>
+        <td id="friday-2"></td>
+        <td id="friday-3"></td>
+        <td id="friday-4"></td>
+        <td id="friday-5"></td>
+        <td id="friday-6"></td>
+        <td id="friday-7"></td>
+        <td id="friday-8"></td>
+      </tr>
+    </table>
+    <br><br>
+    <form>
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject">
+      <br><br>
+      <label for="day">Day:</label>
+      <select id="day" name="day">
+        <option value="monday">Monday</option>
+        <option value="tuesday">Tuesday</option>
+        <option value="wednesday">Wednesday</option>
+        <option value="thursday">Thursday</option>
+        <option value="friday">Friday</option>
+      </select>
+      <br><br>
+      <label for="period">Period:</label>
+      <input type="number" id="period" name="period" min="1" max="8">
+      <br><br>
+      <button type="button" onclick="addSubject()">Add Subject</button>
+    </form>
+<script src="time-table.js"></script>
+  </body>
+  </html>

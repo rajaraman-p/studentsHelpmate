@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Schedule</title>
+    <link rel="stylesheet" href="exam-schedule.css">
+</head>
+<body>
+      <h1>Exam Schedule</h1>
+      <form>
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject"><br><br>
+        <label for="date">Date: </label>
+        <input type="date" id="date" name="date"><br><br>
+        <div class="form-group">
+          <label for="fromTime">Time From:</label>
+          <select id="fromTime" class="form-control">
+            <option value="07:00">7:00</option>
+            <option value="08:00">8:00</option>
+            <option value="09:00">9:00</option>
+            <option value="10:00">10:00</option>
+            <option value="11:00">11:00</option>
+            <option value="12:00">12:00</option>
+            <option value="01:00">1:00</option>
+            <option value="02:00">2:00</option>
+            <option value="03:00">3:00</option>
+            <option value="04:00">4:00</option>
+            <option value="05:00">5:00</option>
+            <option value="06:00">6:00</option>
+          </select>
+          <select id="fromAmPm" class="form-control">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>
+        </div> <br>
+        <div class="form-group">
+          <label for="toTime">Time To:</label>
+          <select id="toTime" class="form-control">
+            <option value="08:00">8:00</option>
+            <option value="09:00">9:00</option>
+            <option value="10:00">10:00</option>
+            <option value="11:00">11:00</option>
+            <option value="12:00">12:00</option>
+            <option value="01:00">1:00</option>
+            <option value="02:00">2:00</option>
+            <option value="03:00">3:00</option>
+            <option value="04:00">4:00</option>
+            <option value="05:00">5:00</option>
+            <option value="06:00">6:00</option>
+            <option value="07:00">7:00</option>
+          </select>
+          <select id="toAmPm" class="form-control">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>
+        </div>  <br>      
+        <button type="button" id="addBtn">Add</button>
+      </form>
+      <br>
+      <table id="schedule">
+        <tr>
+          <th>Date</th>
+          <th>From</th>
+          <th>To</th>
+          <th>Subject</th>
+        </tr>
+      </table>
+      <script src="exam-schedule.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student's Helpmate</title>
+    <link  rel= "stylesheet" href="landing-page.css">
+</head>
+<body>
+    <h1 class="multi-color">Student's Helpmate</h1>
+    <h2><em> Personal hub for Student like you</h2></em>
+    <div class="page">
+    <div class ="left-text">
+    <p><ion-icon name="reader-outline"></ion-icon></ion-icon><sup> To-do list</sup></p><br><br>
+    <p><ion-icon name="stats-chart-outline"></ion-icon> <sup>Progress Report</sup></p><br><br>
+    <p><ion-icon name="logo-euro"></ion-icon> <sup>Exam Schedule</sup></p><br><br>
+    <p><ion-icon name="create-outline"></ion-icon> <sup>Notes</sup></p>
+</div>
+    <div class="right-text">
+    <p><ion-icon name="alert-outline"></ion-icon><sup>Today's Motivation </sup>  </p><br><br>
+    <p></ion-icon><ion-icon name="alarm-outline"></ion-icon><sup>  Reminder </sup> </p><br><br>
+    <p><ion-icon name="calendar-outline"></ion-icon><sup>  Class Time-table </sup> </p><br><br>
+    <p><ion-icon name="game-controller-outline"></ion-icon><sup>  Memory Game</sup> </p>
+</div>
+    <div class="main">
+        <div class="navigation">
+            <span style = "--i:0;--x:-1;--y:0;"><a href = "performance.html" target="_blank"><ion-icon name="stats-chart-outline"></ion-icon></a></span>
+            <span style = "--i:1;--x:1;--y:0;"><a href = "time-table.html" target="_blank"><ion-icon name="calendar-outline"></ion-icon></a></span>
+            <span style = "--i:2;--x:0;--y:-1;"><a href = "motivation.html" target="_blank"><ion-icon name="alert-outline"></ion-icon></a></span>
+            <span style = "--i:3;--x:0;--y:1;"><a href = "notes.html" target="_blank"><ion-icon name="create-outline"></ion-icon></a></span>
+            <span style = "--i:4;--x:-1;--y:1;"><a href = "exam-schedule.html" target="_blank"><ion-icon name="logo-euro"></ion-icon></a></span>
+            <span style = "--i:5;--x:-1;--y:-1;"><a href = "to-do.html" target="_blank"><ion-icon name="reader-outline"></ion-icon></ion-icon></a></span>
+            <span style = "--i:6;--x:1;--y:-1;"><a href = "reminder.html" target="_blank"></ion-icon><ion-icon name="alarm-outline"></ion-icon></a></span>
+            <span style = "--i:7;--x:1;--y:1;"><a href = "memory-game.html" target="_blank"><ion-icon name="game-controller-outline"></ion-icon></a></span>
+        </div>
+        <div class="close"><ion-icon name="close-outline"></ion-icon></div>
+    </div>
+    </div>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"> </script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js">  </script>
+        <script>
+        let navigation = document.querySelector('.navigation');
+        let close = document.querySelector('.close');
+        navigation.onclick = function() {
+            navigation.classList.add('active');
+        }
+        close.onclick = function() {
+            navigation.classList.remove('active');
+
+        } 
+      
+    </script>
+</body>
+</html>

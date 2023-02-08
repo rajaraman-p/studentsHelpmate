@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reminder - Set Alarm</title>
+    <link rel="stylesheet" href="reminder.css">
+</head>
+<body>
+  <h1>Set Reminder</h1>
+    <section class="container">
+        <div class="time-display">
+            <img class="timer" src="reminder.png">
+            <div id="clock"></div>
+        </div>
+        <div class="set-alarm-field">
+          <label for="message">Reminder: </label>
+         <input type="text" id="remind" name="message" placeholder="Remind me of" >
+         <br><br>
+          <label for ="time">Remind me at: </label>
+            <input type="number" name="a_hour" id="a_hour" placeholder="HH" max="23" min="00">
+            <input type="number" name="a_min" id="a_min" placeholder="MM" max="59" min="00"> <br>
+            <h6>*Clock in 24hrs format</h6>
+          </div>
+          
+        <br> <br> <br>
+            <div class="controls">
+                <button type="submit" class="set-alarm">Set Reminder</button>
+                <button type="reset" onclick="clearAlarm()" class="clear-alarm">Stop Reminder</button>
+            </div>
+        </form> 
+    </section>
+    <hr style="margin-top: 20px; margin-left : -40px; width: 150%">
+
+    <section>
+        <div>
+            <h3 class="alarm-heading" style="margin-top: -20px;">Upcoming Reminders</h3>
+        </div>
+        <div>
+            <ul id = "myList">
+            </ul>
+        </div>
+    </section>
+    <script src="reminder.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    min-height: 100vh;
+    background-color: black;
+}
+h1 {
+    padding: 10px;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, rgba(255, 215, 255, 0) 0%, rgba(225, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0) 61%), linear-gradient(rgb(68, 180, 225) 52%, rgb(224, 246, 255) 60%, rgb(78, 99, 132) 61%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+     }
+h2 {
+    text-align: center;
+    color: white;
+}
+.page {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 100px;
+}
+.left-text {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color:white;
+    padding-left: 30px;
+    font-size: 22px;
+} 
+ion-icon{
+    color:rgb(68, 180, 225);
+    font-size: 1.35em;
+}
+.right-text  {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color:white;
+    padding-right: 30px;
+    font-size: 22px;
+} 
+
+ion-icon{
+    color:rgb(68, 180, 225);
+    font-size: 1.35em;
+}
+.main {
+    position: absolute;
+    display: flex;
+    width: 370px;
+    height: 370px;
+    left: 45%;
+    top: 80px;
+}
+
+.main .navigation {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: rgba(255,255,255,0.2);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.main .navigation span {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    transform: translate(calc(40px * var(--x)), calc(40px * var(--y)));
+    transition: transform 0.5s, width 0.5s, height 0.5s;
+ 
+    transition-delay: calc(0.1s * var(--i));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .navigation.active span {
+    width: 110px;
+    height: 110px;
+    background: #1f2536;
+    transform: translate(calc(125px * var(--x)), calc(125px * var(--y)));
+
+}
+ion-icon {
+    pointer-events: none;
+  }
+.main .navigation span ion-icon {
+    transition: 1s;
+    font-size: 0em;
+    color: #fff;
+}
+.main .navigation.active span ion-icon {
+    font-size: 3.45em;
+}
+.main .navigation.active span:hover ion-icon
+{
+    color: rgb(68, 180, 225);
+}
+
+.close {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    transition: 0.5s;
+    transition-delay: 0.4s;
+    pointer-events: none;
+    display: flex;
+    top:40px;
+    left:-60px;
+
+}
+.main .navigation.active ~.close {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: -100px;
+    pointer-events: initial;
+    transition-delay: 0.8s;
+    background: rgb(220, 20, 20);
+}
+.main .navigation ~.close ion-icon {
+    position: absolute;
+    font-size: 2em;
+    scale: 0;
+    top:34px;
+    left: 34px;
+    color: #10131c;
+    transition: 0.5s;
+}
+.main .navigation.active ~.close ion-icon {
+    scale: 1;
+    transition-delay: 1.5s;
+}
